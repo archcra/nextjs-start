@@ -1,34 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+这是一个 nextjs 开发环境，主要处理了 antd 按需加载样式、antd 主题自定义、antd 主题切换的事项。
 
-## Getting Started
+## 预览
 
-First, run the development server:
+在线地址：<a href="https://zhoubangfu.com/cos/2021/0507213210.png" target="_blank">传送门</a>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+1. 白色主题
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![https://zhoubangfu.com/cos/2021/0507213210.png](https://zhoubangfu.com/cos/2021/0507213210.png)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+2. 黑暗主题
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+![https://zhoubangfu.com/cos/2021/0507213036.png](https://zhoubangfu.com/cos/2021/0507213036.png)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 目录及文件
 
-## Learn More
+- public /xx 可访问的静态文件夹
+- - color.less 启动项目自动生成主题文件，在\_app.tsx 中动态引用
+- - less.min.js 生产环境修改 less 变量切换主题色（目前发现只支持 2.7.3）
+- scripts 启动文件，使用 express
+- src 主要代码
+- - components-biz 对应 page 下的子组件
+- - config 项目生产环境配置，其中 dark/light/theme.json 在 next.config 中生成
+- - layout 项目公共结构
+- - pages 路由文件夹
+- - redux 全局的 store
+- - styles 全局样式文件
+- - utils 公共工具
+-
 
-To learn more about Next.js, take a look at the following resources:
+## 依赖说明
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. `next` 需要 10.0.5，高版本的 webpack 不能正确安装（这也许不是 next 的问题）
+2. `less.min.js` 需要 3.0 以下，否则无法在浏览器端正确运行
+3. `mini-css-extract-plugin`需升级到 0.8.0 才能忽略不同顺序导入 antd 组件时导致的警告

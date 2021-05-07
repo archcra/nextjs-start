@@ -1,0 +1,44 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+// 全局加载样式覆盖
+#__next,
+.global-loading {
+  width: 100%;
+  height: 100%;
+}
+
+.global-loading {
+  div {
+    .ant-spin {
+      max-height: 100% !important;
+    }
+  }
+  .ant-spin-container {
+    height: 100%;
+  }
+}
+
+// 自定义全局样式
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
