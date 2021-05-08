@@ -2,7 +2,7 @@
 
 ## 预览
 
-在线地址：<a href="https://zhoubangfu.com/cos/2021/0507213210.png" target="_blank">传送门</a>
+在线地址：<a href="https://zhoubangfu.com/demo/theme" target="_blank">传送门</a>
 
 1. 白色主题
 
