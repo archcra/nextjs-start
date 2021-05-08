@@ -34,3 +34,8 @@ yarn-error.log*
 .vercel
 
 .idea
+
+color.less
+dark.json
+light.json
+theme.json
