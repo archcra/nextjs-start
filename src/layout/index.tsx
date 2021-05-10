@@ -4,7 +4,7 @@ import { StoreTypes } from '@/redux/reducer';
 import { Spin } from 'antd';
 import darkVars from '../config/dark.json';
 import lightVars from '../config/light.json';
-import themeVars from '../config/theme.json';
+// import themeVars from '../config/theme.json';
 import { CHANGE_LOADING } from '@/redux/actions/typeKeys';
 
 import Header from './Header';
@@ -23,11 +23,7 @@ const Layout = (props: any) => {
 
     script.addEventListener('load', () => {
       window['less']
-        .modifyVars(
-          config.name === 'light'
-            ? { ...themeVars, ...lightVars }
-            : { ...themeVars, ...darkVars }
-        )
+        .modifyVars(config.name === 'light' ? lightVars : darkVars)
         .then(() => {
           dispatch({
             type: CHANGE_LOADING,
