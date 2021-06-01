@@ -2,15 +2,15 @@
 
 ## 预览
 
-在线地址：<a href="https://zhoubangfu.com/demo/theme" target="_blank">传送门</a>
+在线地址：<a href="https://imbf.cc/demo/theme" target="_blank">传送门</a>
 
 1. 白色主题
 
-![https://zhoubangfu.com/cos/2021/0507213210.png](https://zhoubangfu.com/cos/2021/0507213210.png)
+![https://imbf.cc/cos/2021/0507213210.png](https://imbf.cc/cos/2021/0507213210.png)
 
 2. 黑暗主题
 
-![https://zhoubangfu.com/cos/2021/0507213036.png](https://zhoubangfu.com/cos/2021/0507213036.png)
+![https://imbf.cc/cos/2021/0507213036.png](https://imbf.cc/cos/2021/0507213036.png)
 
 ## 目录及文件
 
