@@ -51,8 +51,8 @@ function Home({theme}) {
                   });
                 }}
               >
-                <Option value="light">Light</Option>
-                <Option value="dark">Dark</Option>
+                <Option value="light" key="light">Light</Option>
+                <Option value="dark" key="dark">Dark</Option>
               </Select>
             </Card>
           </Col>

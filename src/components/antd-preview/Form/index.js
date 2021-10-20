@@ -5,6 +5,7 @@ import {
   Col,
   Form,
   InputNumber,
+  Input,
   Radio,
   Rate,
   Row,
@@ -79,8 +80,8 @@ const FormPreview = () => {
       </Form.Item>
 
       <Form.Item label="InputNumber">
-        <Form.Item name="input-number" noStyle>
-          <InputNumber min={1} max={10} />
+        <Form.Item name="input-number" >
+          <Input />
         </Form.Item>
         <span className="ant-form-text"> machines</span>
       </Form.Item>

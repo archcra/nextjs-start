@@ -1,6 +1,7 @@
 import { connect } from 'react-redux'
 import { Button, Divider } from 'antd';
 import { themeActionTypes } from '@/redux/theme/action';
+import Link from 'next/link';
 
 const Index = ({ theme, dispatch }) => {
     const change2Dark = () => {
@@ -25,7 +26,11 @@ const Index = ({ theme, dispatch }) => {
             <Divider plain></Divider>
 
             <Button type="link" href="/"> Home </Button>
+            <Divider plain type="vertical"></Divider>
 
+            <Link href="/" prefetch={false}>
+            Home too, another short way? 
+          </Link>
         </>
     )
 }

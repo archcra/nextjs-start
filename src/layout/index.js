@@ -44,23 +44,24 @@ const Layout = (props) => {
     css.rel = 'stylesheet/less';
     css.type = 'text/css';
     document.body.appendChild(css);
-  
+
   }, []);
 
 
   return (
-    <Spin
-      tip="处理中，请稍后...11"
-      // spinning={config.loading}
-      spinning={false}
-      size="large"
-      wrapperClassName="global-loading"
-    >
-        <>
-          <Header />
-          {props.children}
-        </>
-    </Spin>
+    <>
+      <Spin
+        tip="处理中，请稍后...11"
+        // spinning={config.loading}
+        spinning={false}
+        size="large"
+        wrapperClassName="global-loading"
+      >
+
+        <Header />
+        {props.children}
+      </Spin>
+    </>
   );
 };
 

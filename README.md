@@ -8,7 +8,7 @@ This is a Typescript free Next.js boilerplate project, including Ant Design dyna
 - - less.min.js 生产环境修改 less 变量切换主题色（目前发现只支持 2.7.3?）
 - scripts 启动文件，使用 express
 - src 
-- - components/preview Encapsulating some AntDesign components for preview
+- - components/antd-preview Encapsulating some AntDesign components for preview
 - - config 项目生产环境配置，其中 dark/light/theme.json 在 next.config 中生成
 - - layout 项目公共结构
 - - pages 路由文件夹
