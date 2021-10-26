@@ -1,6 +1,10 @@
 /* eslint-disable */
 const withPlugins = require('next-compose-plugins');
 const withAntdLess = require('next-plugin-antd-less');
+const withMDX = require('@next/mdx')({
+  extension: /\.mdx$/
+})
+
 
 const pluginAntdLess = withAntdLess({
   // modifyVars: {
@@ -16,15 +20,21 @@ const pluginAntdLess = withAntdLess({
   // },
 });
 
-module.exports = withPlugins([[pluginAntdLess]], {
+// next.js configuration
+const nextConfig = {
   webpack(config) {
     return config;
-  },
-  // images: {
-  //   disableStaticImages: true,
-  // },
-  // NextFuture
-  // future: {
-  //   webpack5: true,
-  // },
-});
+  }
+}
+
+module.exports = withPlugins([
+  [pluginAntdLess],
+  [withMDX, {
+    pageExtensions: ['js', 'jsx', 'mdx']
+  }]
+],
+  nextConfig);
+
+
+// https://github.com/cyrilwanner/next-compose-plugins#readme Basic example
+

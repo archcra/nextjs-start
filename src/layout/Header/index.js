@@ -40,6 +40,11 @@ const Header = () => {
             Redux测试
           </Link>
         </Menu.Item>
+        <Menu.Item key="test" icon={<AppstoreOutlined />}>
+          <Link href="/mdx/hello" prefetch={false}>
+            Test MDX
+          </Link>
+        </Menu.Item>
       </Menu>
     </header>
   );

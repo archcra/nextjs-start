@@ -15,10 +15,14 @@ This is a Typescript free Next.js boilerplate project, including Ant Design dyna
 - - redux 全局的 store
 - - styles 全局样式文件
 - - utils 公共工具
--
+- - mdx
 
 ## 依赖说明
 
 1. `next` support Next.js' most recent version, now is 11.1.0
 2. `less.min.js` 需要 3.0 以下，否则无法在浏览器端正确运行
 3. `mini-css-extract-plugin`需升级到 0.8.0 才能忽略不同顺序导入 antd 组件时导致的警告
+
+## ref
+https://mdxjs.com/getting-started/next/
+
